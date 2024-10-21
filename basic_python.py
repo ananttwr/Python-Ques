@@ -169,20 +169,26 @@ print(largest)
 
 # ------------ Q9 Write a program to print all prime numbers between 1 and 100.
 
+
 '''
 
 for i in range(2, 101):
 
+    flag = True
+    
     for j in range(2, i):
         if (i % j) == 0:
+            flag = False
             break
-    else:
+
+    if (flag == True):
         print(i)
 
 '''
 
 # ------------ Q10 Write a program to generate a Fibonacci sequence up to n terms.
 
+'''
 
 n = int(input("enter the value of n: "))
 
@@ -197,3 +203,5 @@ for i in range(1, n+1):
     last = curr
 
 print(ans)
+
+'''
